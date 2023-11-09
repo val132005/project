@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/experiencia.css">
+    <title>Experiencia</title>
+</head>
+<body>
+    <h1>Experiencia</h1>
+    <form action="/Experiencia" method="post" id="experiencia_validacion"> 
+
+        <div class="input-box" id="grupo__nombreEmpleador">
+        <label for="NombreEmpleador">Nombre Empleador:</label>
+            <input type="text" name="NombreEmpleador" id="NombreEmpleador" required><br>
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <div class="input-box" id="grupo__cargo">
+        <label for="Cargo">Cargo:</label>
+            <input type="text" name="Cargo" id="Cargo" required><br>
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <div class="input-box" id="grupo__funciones">
+        <label for="Funciones">Funciones:</label>
+            <input type="text" name="Funciones" id="Funciones" required><br> 
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <div class="input-box" id="grupo__logros">
+        <label for="Logros">Logros:</label>
+            <input type="text" name="Logros" id="Logros" required><br> 
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <div class="input-box" id="grupo__fechaIniicio">
+        <label for="FechaInicio">Fecha de Inicio:</label>
+            <input type="date" name="FechaInicio" id="FechaInicio" ><br>
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <div class="input-box" id="grupo__fechaFin">
+        <label for="Fechafinal">Fecha de final:</label>
+            <input type="date" name="Fechafinal" id="Fechafinal" ><br>
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <div class="input-box" id="grupo__ID">
+        <label for="ID">Su id de usuario:</label>
+            <input type="text" name="ID" id="ID" value="{{ ID }}" readonly><br>
+            <p class="formulario__input-error"></p>
+        </div>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+
+<script src="../static/js/js-formularios/experiencia_validacion.js"></script>
+</body>
+</html>

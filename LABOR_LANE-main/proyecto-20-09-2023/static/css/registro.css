@@ -1,0 +1,13 @@
+.formulario__grupo-correcto .icon{
+    color: #12421e;
+}
+
+.formulario__grupo-incorrecto .icon{
+    color: #df4a6a;
+}
+
+.formulario__input-error{
+    color: #df4a6a;
+    font-size: 10px;
+    text-align: left;
+}

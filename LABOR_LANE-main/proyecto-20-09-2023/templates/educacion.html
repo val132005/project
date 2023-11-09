@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/educacion.css">
+    <title>Educacion</title>
+</head>
+<body>
+
+    
+    <h1>Educacion</h1>
+    <form action="/Educacion" method="post" id="educacion_validacion">
+
+        <div class="input-box" id="grupo__nombreInstitucion">
+        <label for="NombreInstitucion">Nombre de la Institucion:</label>
+            <input type="text" name="NombreInstitucion" id="NombreInstitucion" required><br>
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <div class="input-box" id="grupo__tituloeducacion">
+        <label for="TituloEducacion">Titulo de Educacion:</label>
+            <input type="text" name="TituloEducacion" id="TituloEducacion" required><br>
+            <p class="formulario__input-error"></p>
+        </div>
+        
+        <div class="input-box" id="grupo__nivelacademico">
+        <label for="NivelAcademico">Nivel Academico:</label>
+            <input type="text" name="NivelAcademico" id="NivelAcademico" required><br>  
+            <p class="formulario__input-error"></p>
+        </div>
+
+        <label for="FechaInicio">Fecha de Inicio de educacion:</label>
+            <input type="date" name="FechaInicio" id="FechaInicio" ><br>
+        <label for="Fechafinal">Fecha de final de educacion:</label>
+            <input type="date" name="Fechafinal" id="Fechafinal" ><br>
+        <label for="ID">Su id de usuario:</label>
+            <input type="text" name="ID" id="ID" value="{{ usuario_id }}" readonly><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+
+
+<script src="../static/js/js-formularios/educacion_validacion.js"></script>
+</body>
+</html>
